@@ -5,7 +5,6 @@
 
 ## TODO
 
-+ Switch out prototype for jQuery.
 + Barista?
 + 960.gs instead of blueprint?
 + There's some issue with compass HTML5 boilerplate generation. BROKED.
