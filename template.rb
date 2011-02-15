@@ -56,6 +56,8 @@ apply "#{@partials}/_helpers.rb"
 apply "#{@partials}/_rspec.rb"
 apply "#{@partials}/_cucumber.rb"
 apply "#{@partials}/_jquery.rb"
+apply "#{@partials}/_config.rb"
+apply "#{@partials}/_devise.rb"
 apply "#{@partials}/_git.rb"           # Must be last in order to commit initial repository
 
 puts "\n========================================================="
