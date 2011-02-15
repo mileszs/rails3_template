@@ -1,10 +1,11 @@
 # My Rails 3 Application Template
 
+## Using it
 I use this to create new Rails apps tailored to my preferences. Like this, for example:
 
     cd ~/code
     git clone git://github.com/mileszs/rails3_template.git
-    rails new appname -d postgresql -m /rails3_template/template.rb
+    rails new appname -d postgresql -m rails3_template/template.rb
 
 ## What it do:
 + Populates the Gemfile with a ton of shit (just go look at [partials/_gemfile.rb](https://github.com/mileszs/rails3_template/blob/master/partials/_gemfile.rb)).
