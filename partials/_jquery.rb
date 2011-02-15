@@ -16,6 +16,11 @@ get "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javas
 gsub_file 'config/application.rb', /#\s*(JavaScript files you want as :defaults (application.js is always included).)/, '\1'
 gsub_file 'config/application.rb', /#\s*(config.action_view.javascript_expansions[:defaults] = %w(jquery rails))/, '\1'
 
+# Add expansions to application.rb
+application do
+  "  config.action_view.javascript_expansions[:defaults] = %w(jquery rails)\n"
+end
+
 # Add a jquery.rake file to lib/tasks
 # and a jquery:update task to update
 # jquery and rails drivers
