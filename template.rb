@@ -41,7 +41,7 @@ require "bundler"
 require "haml"
 
 # Set directory for partials
-@partials = "#{File.dirname(__FILE__)}"
+@partials = "#{File.dirname(__FILE__)}/partials"
 
 puts "\n========================================================="
 puts " RAILS 3 TEMPLATE".yellow.bold
@@ -50,9 +50,12 @@ puts "=========================================================\n"
 apply "#{@partials}/_gemfile.rb"
 apply "#{@partials}/_rvm.rb"           # Must be after gemfile since it runs bundler
 apply "#{@partials}/_boilerplate.rb"
-apply "#{@partials}/_stylesheets.rb"   # Must be after boilerplate since it modifies SASS files
+apply "#{@partials}/_simple_form.rb"
+apply "#{@partials}/_barista.rb"
 apply "#{@partials}/_helpers.rb"
 apply "#{@partials}/_rspec.rb"
+apply "#{@partials}/_cucumber.rb"
+apply "#{@partials}/_jquery.rb"
 apply "#{@partials}/_git.rb"           # Must be last in order to commit initial repository
 
 puts "\n========================================================="

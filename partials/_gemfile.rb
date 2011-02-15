@@ -14,13 +14,16 @@ file 'Gemfile', <<-RUBY.gsub(/^ {2}/, '')
   # Database
   gem 'pg'
 
+  # Compass && boilerplate
+  gem 'compass'
+  gem 'html5-boilerplate'
+
   # HTML and CSS replacement (includes SASS)
   gem 'haml', '~> 3.0'
   gem 'haml-rails'
 
-  # HTML/CSS framework and boilerplate
-  gem 'compass'
-  gem 'html5-boilerplate'
+  # Barista for CoffeeScript
+  gem 'barista', '~> 1.0'
 
   # Form Builder
   gem 'simple_form'
