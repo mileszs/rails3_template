@@ -10,7 +10,7 @@ remove_file '.gitignore'
 file '.gitignore', <<-CODE.gsub(/^ {2}/, '')
   .DS_Store
   .bundle
-  .rvmrc
+  .sass-cache
   mkmf.log
   log/*
   coverage/*

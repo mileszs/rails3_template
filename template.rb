@@ -17,18 +17,6 @@ unless Gem.available?("bundler")
   Gem.activate("bundler")
 end
 
-unless Gem.available?("compass")
-  run "gem install compass"
-  Gem.refresh
-  Gem.activate("compass")
-end
-
-unless Gem.available?("html5-boilerplate")
-  run "gem install html5-boilerplate"
-  Gem.refresh
-  Gem.activate("html5-boilerplate")
-end
-
 unless Gem.available?("haml")
   run "haml"
   Gem.refresh
@@ -49,13 +37,8 @@ puts "=========================================================\n"
 
 apply "#{@partials}/_gemfile.rb"
 apply "#{@partials}/_rvm.rb"           # Must be after gemfile since it runs bundler
-apply "#{@partials}/_boilerplate.rb"
 apply "#{@partials}/_simple_form.rb"
-apply "#{@partials}/_barista.rb"
 apply "#{@partials}/_helpers.rb"
-apply "#{@partials}/_rspec.rb"
-apply "#{@partials}/_cucumber.rb"
-apply "#{@partials}/_jquery.rb"
 apply "#{@partials}/_config.rb"
 apply "#{@partials}/_devise.rb"
 apply "#{@partials}/_git.rb"           # Must be last in order to commit initial repository
