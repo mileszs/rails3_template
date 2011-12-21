@@ -8,51 +8,44 @@ file 'Gemfile', <<-RUBY.gsub(/^ {2}/, '')
   # Gems host
   source 'http://rubygems.org'
 
-  # Rails (version >= 3.0.4 and < 3.1)
-  gem 'rails', '~> 3.0.4'
+  # Rails (version >= 3.1.0 and < 3.2)
+  gem 'rails', '~> 3.1.0'
 
   # Database
   gem 'pg'
 
-  # Compass && boilerplate
-  gem 'compass'
-  gem 'html5-boilerplate'
-
-  # HTML and CSS replacement (includes SASS)
-  gem 'haml', '~> 3.0'
-  gem 'haml-rails'
-
-  # Barista for CoffeeScript
-  gem 'barista', '~> 1.0'
+  # Assets
+  gem 'coffee-script'
+  gem 'uglifier'
+  gem 'haml'
+  gem 'jquery-rails'
 
   # Form Builder
   gem 'simple_form'
 
   # DRY those controllers
-  gem 'inherited_resources', "1.1.2"
-
-  # Human readable URLs
-  gem 'friendly_id', '~> 3.2'
-
-  # Better console formatting
-  gem 'blackwinter-wirble', :require => nil
-  gem 'bond', :require => nil
+  gem 'inherited_resources'
 
   # User authentication (accounts)
   gem 'devise', '~> 1.1'
 
   # Markdown
   gem 'maruku'
+  gem 'redcarpet'
 
   # Pagination of long lists
-  gem 'will_paginate', '~> 3.0.pre3'
-  
+  gem 'will_paginate', '~> 3.0'
+
   # DelayedJob for delayed jobs
-  gem 'delayed_job', '2.1.0.pre'
+  gem 'delayed_job'
+
+  gem 'json_pure'
+  gem 'thin'
+
+  gem 'newrelic_rpm'
 
   group :development, :test do
-    gem 'thin'
-    gem "rspec-rails", "~> 2.0.1"
+    gem "rspec-rails"
     gem 'capybara'
     gem 'database_cleaner'
     gem 'cucumber-rails'
@@ -64,11 +57,14 @@ file 'Gemfile', <<-RUBY.gsub(/^ {2}/, '')
     gem 'fakeweb'
     gem 'gherkin'
     gem 'deadweight'
-    
-    gem 'rails3-generators', '0.11.0'
+
+    gem 'rails3-generators'
     gem 'hpricot'
     gem 'ruby_parser', '2.0.4'
-    gem 'evergreen', :require => 'evergreen/rails'
     gem 'rcov'
+
+    gem 'heroku'
+    gem 'taps'
   end
+
 RUBY
