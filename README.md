@@ -10,18 +10,12 @@ I use this to create new Rails apps tailored to my preferences. Like this, for e
 ## What it do:
 + Populates the Gemfile with a ton of shit (just go look at [partials/_gemfile.rb](https://github.com/mileszs/rails3_template/blob/master/partials/_gemfile.rb)).
 + Creates an .rvmrc
-+ Generates Compass stuffs with HTML5 Boilerplate stuffs
 + Sets up Simple Form
-+ Sets up Barista
 + Throws in a couple helpers (for title and meta description)
-+ Sets up RSpec
-+ Sets up Cucumber
-+ Replaces Prototype with jQuery
 + git init . and commit all that shit.
 
 ## TODO
-+ 960.gs instead of blueprint?
-+ Do I really like Compass? I mean, in theory, yes. In practice, I don't know.
++ 960.gs? Twitter Bootstrap? Skeleton?
 + Jammit? Jammit + those rake tasks I wrote for Heroku + Jammit?
 + FastestForward's heroku_san? ... At least as an option, right?
 
